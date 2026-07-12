@@ -35,9 +35,9 @@
 //  Q1: My last name is Doe
 //  Q1: I was born in Canada
 
-const firstName = "Noah";
-const lastName = "Bouey";
-const country = "United States";
+let firstName = "Noah";
+let lastName = "Bouey";
+let country = "United States";
 
 console.log("Q1: My first name is", firstName);
 console.log("Q1: My last name is", lastName);
@@ -68,12 +68,12 @@ console.log("Q1: I was born in", country);
 //  Q2: This is a negative number: -6
 
 // // 
-const floatingPoint = 99.9;
-const integer = 5;
-const negative = -6;
+let floatingPoint = 99.9;
+let integer = 5;
+let negative = -6;
 
-// Stretch Goal
-const bigNumber = 123456789;
+// 
+let bigNumber = 123456789;
 
 // 
 console.log("Q2: This is a floating point number:", floatingPoint);
@@ -95,8 +95,8 @@ console.log("Q2: This is a big number:", bigNumber);
 // EXAMPLE OUTPUT:
 //  Q3: The variable I made true is: true
 //  Q3: The variable I made false is: false
-const isLoggedIn = true;
-const hasCompletedTask = false;
+let isLoggedIn = true;
+let hasCompletedTask = false;
 // 
 console.log("Q3: The variable I made true is:", isLoggedIn);
 console.log("Q3: The variable I made false is:", hasCompletedTask);
@@ -139,8 +139,8 @@ console.log("Q4 second: ", secondHelloString);
 //  Q5 add: 5
 
 // Q5 variables
-const subtractionVariable = floatingPoint - integer;
-const additionVariable = integer + negative;
+let subtractionVariable = floatingPoint - integer;
+let additionVariable = integer + negative;
 
 // Console logs
 console.log("Q5 subtract:", subtractionVariable);
@@ -172,13 +172,13 @@ console.log("Q5 add:", additionVariable);
 //  Q6 capitalize: JANE 
 
 // 
-const nameLength = firstName.length;
-const firstInitial = firstName[0];
-const lastInitial = firstName[firstName.length - 1];
-const capitalize = firstName.toUpperCase();
+let nameLength = firstName.length;
+let firstInitial = firstName[0];
+let lastInitial = firstName[firstName.length - 1];
+let capitalize = firstName.toUpperCase();
 
 // 
-const weirdInitials = (firstName[firstName.length - 1] + lastName[lastName.length - 1]).toUpperCase();
+let weirdInitials = (firstName[firstName.length - 1] + lastName[lastName.length - 1]).toUpperCase();
 
 console.log("Q6: Name length:", nameLength);
 console.log("Q6: First initial:", firstInitial);
@@ -259,7 +259,7 @@ console.log("Q7 stretchAnswer type: ", typeof (stretchAnswer));
 // Q8: Young at heart!
 
 // 
-const age = 30;
+let age = 30;
 
 // 
 if (age <= 30) {
@@ -310,8 +310,8 @@ console.log("Q9 exampleNum after round:", exampleNum);
 
 //
 function assignMessageString() {
-  const message = "Welcome to Code the Dream!";
-  return message;
+    const message = "Welcome to Code the Dream!";
+    return message;
 }
 
 console.log("Q10:", assignMessageString());
@@ -329,8 +329,8 @@ console.log("Q10:", assignMessageString());
 
 //
 function combineStrings() {
-    const string1 = "Good";
-    const string2 = "Evening";
+    let string1 = "Good";
+    let string2 = "Evening";
 
     return string1 + " " + string2;
 }
@@ -349,7 +349,7 @@ console.log("Q11: ", combineStrings());
 // PUT YOUR CODE HERE
 
 function useParams(text) {
-  return text.toUpperCase();
+    return text.toUpperCase();
 }
 
 console.log("Q12:", useParams("hello"));
@@ -367,8 +367,8 @@ console.log("Q12:", useParams("hello"));
 //  Q13: 5
 
 //  
-const word1 = "JavaScript";
-const word2 = "Code";
+let word1 = "JavaScript";
+let word2 = "Code";
 
 // 
 function biggestStringLength(word1, word2) {
@@ -408,10 +408,13 @@ console.log("Q13: ", biggestStringLength(word1, word2));
 
 // PUT YOUR CODE HERE
 function returnRandomNum() {
+    let generationFloor = 1;
     return Math.floor(Math.random() * 3) + 1;
 }
 
-console.log("Q14: ", returnRandomNum());
+console.log("Q14 randon number: ", returnRandomNum());
+console.log("Q14 randon number: ", returnRandomNum());
+console.log("Q14 randon number: ", returnRandomNum());
 
 
 // ---------- QUESTION 15 ----------
@@ -438,7 +441,7 @@ function returnRandomNum() {
 
 // 
 function shakeMagic8Ball() {
-    const randomNum = returnRandomNum();
+    let randomNum = returnRandomNum();
 
     if (randomNum === 1) {
         return "It is certain";
