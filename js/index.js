@@ -43,7 +43,6 @@ messageForm.addEventListener("submit", function(event) {
     console.log(message);
 
     const messageSection = document.getElementById("messages");
-
     const messageList = messageSection.querySelector("ul");
 
     const newMessage = document.createElement("li");
@@ -51,9 +50,7 @@ messageForm.addEventListener("submit", function(event) {
     newMessage.innerHTML = `<a href="mailto:${email}">${name}</a>: <span>${message}</span>`;
 
     const removeButton = document.createElement("button");
-
     removeButton.innerText = "remove";
-
     removeButton.type = "button";
 
     removeButton.addEventListener("click", function() {
@@ -62,7 +59,6 @@ messageForm.addEventListener("submit", function(event) {
     });
 
     newMessage.appendChild(removeButton);
-
     messageList.appendChild(newMessage);
 
     event.target.reset();
