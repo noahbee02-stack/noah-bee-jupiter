@@ -15,7 +15,6 @@
         <a href="#Connect">Connect</a>
         <a href="#LeaveMessage">Leave a Message</a>
     </nav>
-</nav>
 
 <h1>Noah Bouey</h1>
 
@@ -64,18 +63,16 @@
 <section id="LeaveMessage">
     <h2>Leave a Message</h2>
 
+
     <form name="leave_message">
         <label for="usersName">Name:</label>
         <input type="text" name="usersName" id="usersName" required>
-        <br>
 
         <label for="usersEmail">Email:</label>
         <input type="email" name="usersEmail" id="usersEmail" required>
-        <br>
 
         <label for="usersMessage">Message:</label>
         <textarea name="usersMessage" id="usersMessage" required></textarea>
-        <br>
 
         <button type="submit">Submit</button>
     </form>
@@ -86,6 +83,73 @@
     <ul></ul>
 </section>
 
-    <script src="js/index.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
+
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#LeaveMessage label {
+    font-weight: bold;
+}
+
+#LeaveMessage input,
+#LeaveMessage textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#LeaveMessage textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#LeaveMessage button {
+    width: 120px;
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#messages li {
+    margin-bottom: 15px;
+}
+
+#messages button {
+    margin-left: 10px;
+    min-height: 40px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    #LeaveMessage form {
+        width: 100%;
+    }
+
+    #LeaveMessage input,
+    #LeaveMessage textarea {
+        font-size: 16px;
+    }
+
+    #LeaveMessage button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    #messages button {
+        min-height: 44px;
+    }
+}
