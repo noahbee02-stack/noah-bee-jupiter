@@ -108,3 +108,94 @@ nav a:hover {
     flex: 1 1 150px;
     text-align: center;
 }
+#LeaveMessage form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#LeaveMessage input,
+#LeaveMessage textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+#LeaveMessage textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#LeaveMessage button {
+    width: 120px;
+    min-height: 44px;
+    padding: 10px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#messages li {
+    margin-bottom: 15px;
+}
+
+#messages button {
+    margin-left: 10px;
+    min-height: 40px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    #LeaveMessage form {
+        width: 100%;
+    }
+
+    #LeaveMessage input,
+    #LeaveMessage textarea {
+        font-size: 16px;
+    }
+
+    #LeaveMessage button {
+        width: 100%;
+        min-height: 48px;
+    }
+
+    #messages button {
+        min-height: 44px;
+        margin-left: 5px;
+    }
+}
+#Projects {
+    padding: 20px;
+}
+
+#Projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+#Projects li {
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    #Projects ul {
+        flex-direction: column;
+    }
+
+    #Projects li {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}

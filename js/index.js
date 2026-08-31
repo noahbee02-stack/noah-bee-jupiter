@@ -2,13 +2,15 @@ const today = new Date();
 
 const thisYear = today.getFullYear();
 
-const footer = document.querySelector("footer");
+const footer = document.createElement("footer");
 
 const copyright = document.createElement("p");
 
 copyright.innerHTML = "© Noah Bouey " + thisYear;
 
 footer.appendChild(copyright);
+
+document.body.appendChild(footer);
 
 const skills = [
     "JavaScript",
@@ -62,3 +64,24 @@ messageForm.addEventListener("submit", function(event) {
 
     event.target.reset();
 });
+
+fetch("https://api.github.com/users/noahbee02-stack/repos")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(repositories) {
+    console.log(repositories);
+
+    const projectSection = document.getElementById("Projects");
+    const projectList = projectSection.querySelector("ul");
+
+    for (let i = 0; i < repositories.length; i++) {
+        const project = document.createElement("li");
+        project.innerText = repositories[i].name;
+        projectList.appendChild(project);
+    }
+})
+    .catch(function(error) {
+        console.log("Error fetching repositories:", error);
+    });
+    
