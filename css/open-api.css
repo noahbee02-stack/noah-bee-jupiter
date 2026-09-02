@@ -1,0 +1,117 @@
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+background-color: #f4f7fb;
+color: #1f2937;
+}
+
+header {
+background-color: #172554;
+color: white;
+text-align: center;
+padding: 40px 20px;
+}
+
+header h1 {
+margin-bottom: 10px;
+font-size: 2.2rem;
+}
+
+header p {
+margin-bottom: 25px;
+font-size: 1.1rem;
+}
+
+nav {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 15px;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+font-weight: bold;
+padding: 8px 14px;
+border-radius: 6px;
+}
+
+nav a:hover {
+background-color: #2563eb;
+}
+
+main {
+max-width: 900px;
+margin: 30px auto;
+padding: 0 20px;
+}
+
+section {
+background-color: white;
+margin-bottom: 30px;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+margin-top: 0;
+color: #172554;
+}
+
+button {
+background-color: #2563eb;
+color: white;
+border: none;
+padding: 12px 20px;
+border-radius: 6px;
+font-size: 16px;
+font-weight: bold;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #1d4ed8;
+}
+
+#repositoriesContainer,
+#profileContainer {
+margin-top: 20px;
+}
+
+#repositoriesContainer ul {
+padding-left: 20px;
+}
+
+#repositoriesContainer li {
+margin-bottom: 20px;
+padding: 15px;
+border-left: 4px solid #2563eb;
+background-color: #f8fafc;
+}
+
+#repositoriesContainer strong {
+font-size: 1.1rem;
+}
+
+#profileContainer {
+padding: 20px;
+background-color: #f8fafc;
+border-radius: 8px;
+}
+
+#profileContainer h3 {
+color: #172554;
+font-size: 1.5rem;
+}
+
+footer {
+text-align: center;
+padding: 25px;
+margin-top: 40px;
+background-color: #172554;
+color: white;
+}
