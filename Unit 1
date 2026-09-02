@@ -294,7 +294,7 @@ let exampleNum = 21.4572;
 
 
 // 
-console.log("Q9 exampleNum after round:", exampleNum);
+console.log("Q9 exampleNum after round:", exampleNum.toFixed(2));
 
 
 
